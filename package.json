@@ -1,17 +1,24 @@
 {
+  "name": "@nuggetslife/react-native-amqp",
+  "version": "0.12.0",
+  "description": "A RabbitMq component for React Native",
   "author": {
-    "name": "Ko-ichi MAKITA"
+    "name": "Nuggets Ltd",
+    "email": "support@nuggets.life",
+    "url": "http://nuggets.life"
   },
+  "contributors": [
+    "Andrew Lord"
+  ],
   "bugs": {
-    "url": "https://github.com/kmakita13714/react-native-amqp/issues"
+    "url": "https://github.com/NuggetsLtd/react-native-amqp/issues"
   },
   "bundleDependencies": false,
   "dependencies": {},
   "deprecated": false,
-  "description": "A RabbitMq component for React Native.",
   "devDependencies": {},
   "directories": {},
-  "homepage": "https://github.com/kmakita13714/react-native-amqp",
+  "homepage": "https://github.com/NuggetsLtd/react-native-amqp",
   "keywords": [
     "react-native",
     "react",
@@ -21,17 +28,15 @@
   "main": "index.js",
   "maintainers": [
     {
-      "name": "kmakita13714",
-      "email": "kmakita13714@gmail.com"
+      "name": "NuggetsLtd",
+      "email": "support@nuggets.life"
     }
   ],
-  "name": "react-native-amqp",
   "nativePackage": true,
   "optionalDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kmakita13714/react-native-amqp.git"
+    "url": "git+https://github.com/NuggetsLtd/react-native-amqp.git"
   },
-  "scripts": {},
-  "version": "0.11.0-1"
+  "scripts": {}
 }
