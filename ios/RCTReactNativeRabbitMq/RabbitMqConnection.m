@@ -116,6 +116,15 @@ RCT_EXPORT_METHOD(basicAck:(NSString *)queue_name delivery_tag:(nonnull NSNumber
     }
 }
 
+RCT_EXPORT_METHOD(basicQos:(NSString *)queue_name count:(nonnull NSNumber *)count global:(BOOL *)global)
+{
+    id queue_id = [self findQueue:queue_name];
+
+    if (queue_id != nil) {
+        [queue_id basicQos:count global:global];
+    }
+}
+
 RCT_EXPORT_METHOD(cancelConsumer:(NSString *)queue_name)
 {
     id queue_id = [self findQueue:queue_name];
