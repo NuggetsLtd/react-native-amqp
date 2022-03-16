@@ -119,6 +119,10 @@ RCT_EXPORT_MODULE();
     [self.channel ack:deliveryTag];
 }
 
+-(void) basicQos:(NSNumber *)count global:(BOOL *)global {
+    [self.channel basicQos:count global:global];
+}
+
 -(void) cancelConsumer {
     [self.consumer cancel];
 }
