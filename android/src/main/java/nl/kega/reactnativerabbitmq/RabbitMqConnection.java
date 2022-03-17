@@ -243,12 +243,25 @@ class RabbitMqConnection extends ReactContextBaseJavaModule  {
             }
         }
 
-        if (!found_queue.equals(null)){
+        if (!found_queue.equals(null)) {
             long long_delivery_tag = Double.valueOf(delivery_tag).longValue();
             found_queue.basicAck(long_delivery_tag);
         }
+    }
 
-     
+    @ReactMethod
+    public void basicQos(String queue_name, Double count, Boolean global) {
+        RabbitMqQueue found_queue = null;
+        for (RabbitMqQueue queue : queues) {
+		    if (Objects.equals(queue_name, queue.name)){
+                found_queue = queue;
+            }
+        }
+
+        if (!found_queue.equals(null)) {
+            int int_count = count.intValue();
+            found_queue.basicQos(int_count, global);
+        }
     }
 
     /*
