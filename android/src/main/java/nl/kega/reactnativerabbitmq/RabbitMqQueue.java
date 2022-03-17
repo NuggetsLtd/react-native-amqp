@@ -197,8 +197,20 @@ public class RabbitMqQueue {
         } catch (AlreadyClosedException e){
             Log.e("RabbitMqQueue AlreadyClosedException", "basicAck " + e);
             e.printStackTrace();
-        } 
-  
+        }
+
+    }
+
+    public void basicQos(int count, boolean global) {
+        try {
+            this.channel.basicQos(count, global);
+        } catch (IOException e){
+            Log.e("RabbitMqQueue", "basicQos " + e);
+            e.printStackTrace();
+        } catch (AlreadyClosedException e){
+            Log.e("RabbitMqQueue AlreadyClosedException", "basicQos " + e);
+            e.printStackTrace();
+        }
     }
 
 }
