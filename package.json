@@ -1,6 +1,6 @@
 {
   "name": "@nuggetslife/react-native-amqp",
-  "version": "0.12.3",
+  "version": "0.12.5",
   "description": "A RabbitMq component for React Native",
   "author": {
     "name": "Nuggets Ltd",
