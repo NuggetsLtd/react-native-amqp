@@ -37,7 +37,7 @@ RCT_EXPORT_METHOD(connect)
     self.connection = [[RMQConnection alloc] initWithUri:uri 
                                               channelMax:@65535 
                                                 frameMax:@(RMQFrameMax) 
-                                               heartbeat:@10
+                                               heartbeat:@0
 										  connectTimeout:@15
 											 readTimeout:@30
 										    writeTimeout:@30
