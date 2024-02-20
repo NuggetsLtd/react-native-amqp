@@ -34,6 +34,9 @@
   ],
   "nativePackage": true,
   "optionalDependencies": {},
+  "peerDependencies": {
+    "react-native": ">=0.73"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NuggetsLtd/react-native-amqp.git"
